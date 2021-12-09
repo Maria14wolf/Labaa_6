@@ -11,7 +11,11 @@ namespace Labaa_6
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
-            Console.ReadLine();
+            string[] data = Console.ReadLine().Trim().Split();
+            int A = Int32.Parse(data[0]);
+            int B = Int32.Parse(data[1]);
+            Console.WriteLine(A + B);
+            Console.ReadKey();
         }
     }
 }
